@@ -1,0 +1,18 @@
+package single.inheritance;
+class Student{
+String designation = "Student";
+String collegeName = "RIT";
+void does(){
+System.out.println("Studying");
+}
+}
+public class SingleInheritance extends Student{
+String mainSubject = "OOPS";
+public static void main(String args[]){
+SingleInheritance obj = new SingleInheritance();
+System.out.println(obj.collegeName);
+System.out.println(obj.designation);
+System.out.println(obj.mainSubject);
+obj.does();
+}
+}
